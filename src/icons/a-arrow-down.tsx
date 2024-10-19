@@ -2,17 +2,21 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const Activity: React.FC<IconProps> = ({
+export const AArowDown: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
-  const polylineRef = useRef<SVGPolylineElement>(null);
+  const arrowRef = useRef<SVGPathElement>(null);
 
   useEffect(() => {
     if (!hovered) return;
 
-    polylineRef.current?.animate(
-      [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
+    arrowRef.current?.animate(
+      [
+        { transform: "translateY(-4px)" },
+        { transform: "translateY(4px)" },
+        { transform: "translateY(0)" },
+      ],
       {
         duration: 600,
         iterations: 1,
@@ -35,10 +39,12 @@ export const Activity: React.FC<IconProps> = ({
       strokeLinejoin="round"
       {...props}
     >
-      <path
-        d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
-        ref={polylineRef}
-      />
+      <path d="M3.5 13h6" />
+      <path d="m2 16 4.5-9 4.5 9" />
+      <g ref={arrowRef}>
+        <path d="M18 7v9" />
+        <path d="m14 12 4 4 4-4" />
+      </g>
     </svg>
   );
 };

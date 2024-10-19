@@ -2,18 +2,19 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const Airplay: React.FC<IconProps> = ({
+export const ALargeSmall: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
-  const pathRef = useRef<SVGPathElement>(null);
-  const path2Ref = useRef<SVGPolygonElement>(null);
+  const path1Ref = useRef<SVGPathElement>(null);
+  const path2Ref = useRef<SVGPathElement>(null);
 
   useEffect(() => {
     if (!hovered) return;
 
-    pathRef.current?.animate(
-      [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
+    // path1 scale 0.5 to 1, path2 scale 1.5 to 1
+    path1Ref.current?.animate(
+      [{ transform: "scaleY(0.5)" }, { transform: "scaleY(1)" }],
       {
         duration: 600,
         iterations: 1,
@@ -23,7 +24,7 @@ export const Airplay: React.FC<IconProps> = ({
     );
 
     path2Ref.current?.animate(
-      [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
+      [{ transform: "scaleY(1.5)" }, { transform: "scaleY(1)" }],
       {
         duration: 600,
         iterations: 1,
@@ -46,11 +47,14 @@ export const Airplay: React.FC<IconProps> = ({
       strokeLinejoin="round"
       {...props}
     >
-      <path
-        ref={pathRef}
-        d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"
-      />
-      <path ref={path2Ref} d="m12 15 5 6H7Z" />
+      <g ref={path1Ref}>
+        <path d="M21 14h-5" />
+        <path d="M16 16v-3.5a2.5 2.5 0 0 1 5 0V16" />
+      </g>
+      <g ref={path2Ref}>
+        <path d="M4.5 13h6" />
+        <path d="m3 16 4.5-9 4.5 9" />
+      </g>
     </svg>
   );
 };

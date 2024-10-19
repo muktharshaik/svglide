@@ -2,30 +2,31 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const Airplay: React.FC<IconProps> = ({
+export const Accesibility: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
-  const pathRef = useRef<SVGPathElement>(null);
-  const path2Ref = useRef<SVGPolygonElement>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
+  const wheelRef = useRef<SVGCircleElement>(null);
 
   useEffect(() => {
     if (!hovered) return;
 
-    pathRef.current?.animate(
+    svgRef.current?.animate(
       [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
       {
-        duration: 600,
+        duration: 1200,
         iterations: 1,
         fill: "forwards",
         easing: "ease-in-out",
       }
     );
 
-    path2Ref.current?.animate(
-      [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
+    // translate the wheel to the right
+    wheelRef.current?.animate(
+      [{ transform: "translateX(10px)" }, { transform: "translateX(0px)" }],
       {
-        duration: 600,
+        duration: 400,
         iterations: 1,
         fill: "forwards",
         easing: "ease-in-out",
@@ -44,13 +45,17 @@ export const Airplay: React.FC<IconProps> = ({
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      ref={svgRef}
       {...props}
     >
-      <path
-        ref={pathRef}
-        d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"
-      />
-      <path ref={path2Ref} d="m12 15 5 6H7Z" />
+      <circle cx="16" cy="4" r="1" />
+      <path d="m18 19 1-7-6 1" />
+      <path d="m5 8 3-3 5.5 3-2.36 3.5" />
+
+      <g ref={wheelRef}>
+        <path d="M4.24 14.5a5 5 0 0 0 6.88 6" />
+        <path d="M13.76 17.5a5 5 0 0 0-6.88-6" />
+      </g>
     </svg>
   );
 };
