@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# SVGlide: Animated SVG Icon Library for React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Elevate your user interface with SVGlide, a dynamic and animated SVG icon library designed specifically for React applications. Built using Vite and TypeScript, SVGlide offers a wide range of customizable icons that bring life to your projects with smooth and responsive animations.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Easy Integration:** Seamlessly integrates with any React project.
+- **Performance Optimized:** Lightweight icons designed for fast loading and minimal impact.
+- **Fully Customizable:** Tailor animations and styles to fit your branding.
+- **Open-Source:** Free to use under the ISC license, with the source available on GitHub for contributions.
 
-## Expanding the ESLint configuration
+## Roadmap 🗺
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Here is the list in the format you requested:
 
-- Configure the top-level `parserOptions` property like this:
+- [ ] Accessibility
+- [ ] Accounts & access
+- [ ] Animals
+- [x] Arrows
+- [ ] Brands
+- [ ] Buildings
+- [x] Charts
+- [ ] Communication
+- [ ] Connectivity
+- [ ] Currency
+- [ ] Cursors
+- [ ] Design
+- [ ] Coding & development
+- [ ] Devices
+- [ ] Emoji
+- [ ] File icons
+- [ ] Food & beverage
+- [ ] Furniture
+- [ ] Gaming
+- [ ] Home
+- [ ] Layout
+- [ ] Mail
+- [ ] Maps
+- [ ] Maths
+- [ ] Medical
+- [ ] Money
+- [ ] Multimedia
+- [ ] Nature
+- [ ] Navigation
+- [ ] Notifications
+- [ ] People
+- [ ] Photography
+- [ ] Science
+- [ ] Seasons
+- [ ] Security
+- [ ] Shapes
+- [ ] Shopping
+- [ ] Social
+- [ ] Sports
+- [ ] Sustainability
+- [ ] Text formatting
+- [ ] Time & calendar
+- [ ] Tools
+- [ ] Transportation
+- [ ] Travel
+- [ ] Weather
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🔄 Contributing
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Contributions are always welcome! Please see our CONTRIBUTING.md for more information on how to get involved.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📄 License
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+SVGlide is open-source software licensed under the ISC license.
+
+Built with ❤️ using React, TypeScript, and Vite.
+
+`This README provides an overview of what SVGlide is, how to install and use it, how to contribute, and the licensing information, making it perfect for both newcomers and seasoned developers. If there's anything specific you'd like to add or modify, feel free to tell me!`
