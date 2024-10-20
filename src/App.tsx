@@ -285,7 +285,7 @@ const Icons = [
 
 function App() {
   return (
-    <main className="min-w-screen min-h-screen flex items-center justify-center flex-col gap-10">
+    <main className="w-screen min-h-screen flex items-center justify-center flex-col gap-10">
       <h1 className="font-bold">SVGlide</h1>
       <div className="gap-2 flex items-center justify-center flex-wrap container p-4">
         {Icons.map((Icon, index) => (
