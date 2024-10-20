@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const TrendingUpDown: React.FC<IconProps> = ({
+export const TrendingUp: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
@@ -13,11 +13,11 @@ export const TrendingUpDown: React.FC<IconProps> = ({
 
     baseRef.current?.animate(
       [
-        { strokeDasharray: "0, 100", rotate: "-10deg" },
+        { strokeDasharray: "0, 100", rotate: "10deg" },
         { strokeDasharray: "100, 0", rotate: "0deg" },
       ],
       {
-        duration: 1000,
+        duration: 600,
         iterations: 1,
         fill: "forwards",
         easing: "ease-in-out",
@@ -39,10 +39,8 @@ export const TrendingUpDown: React.FC<IconProps> = ({
       ref={baseRef}
       {...props}
     >
-      <path d="M14.828 14.828 21 21" />
-      <path d="M21 16v5h-5" />
-      <path d="m21 3-9 9-4-4-6 6" />
-      <path d="M21 8V3h-5" />
+      <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+      <polyline points="16 7 22 7 22 13" />
     </svg>
   );
 };

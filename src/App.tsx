@@ -139,6 +139,37 @@ import { SquareArrowRight } from "./icons/square-arrow-right";
 import { SquareArrowUp } from "./icons/square-arrow-up";
 import { SquareArrowUpLeft } from "./icons/square-arrow-up-left";
 import { SquareArrowUpRight } from "./icons/square-arrow-up-right";
+import { ChartArea } from "./icons/chart-area";
+import { ChartBar } from "./icons/chart-bar";
+import { ChartBarDecreasing } from "./icons/chart-bar-decreasing";
+import { ChartBarIncreasing } from "./icons/chart-bar-increasing";
+import { ChartBarBig } from "./icons/chart-bar-big";
+import { ChartBarStacked } from "./icons/chart-bar-stacked";
+import { ChartCandlestick } from "./icons/chart-candlestick";
+import { ChartColumn } from "./icons/chart-column";
+import { ChartColumnBig } from "./icons/chart-column-big";
+import { ChartColumnDecreasing } from "./icons/chart-column-decreasing";
+import { ChartColumnIncreasing } from "./icons/chart-column-increasing";
+import { ChartColumnStacked } from "./icons/chart-column-stacked";
+import { ChartGantt } from "./icons/chart-gantt";
+import { ChartLine } from "./icons/chart-line";
+import { ChartNetwork } from "./icons/chart-network";
+import { ChartNoAxesColumn } from "./icons/chart-no-axes-column";
+import { ChartNoAxesColumnDecreasing } from "./icons/chart-no-axes-column-decreasing";
+import { ChartNoAxesColumnIncreasing } from "./icons/chart-no-axes-column-increasing";
+import { ChartNoAxesCombined } from "./icons/chart-no-axes-combined";
+import { ChartNoAxesGantt } from "./icons/chart-no-axes-gantt";
+import { ChartPie } from "./icons/chart-pie";
+import { ChartScatter } from "./icons/chart-scatter";
+import { ChartSpline } from "./icons/chart-spline";
+import { Kanban } from "./icons/kanban";
+import { SquareChartGantt } from "./icons/square-chart-gantt";
+import { SquareDashedKanban } from "./icons/square-dashed-kanban";
+import { SquareKanban } from "./icons/square-kanban";
+import { TrendingDown } from "./icons/trending-down";
+import { TrendingUp } from "./icons/trending-up";
+import { FolderKanban } from "./icons/folder-kanban";
+import { PanelsTopLeft } from "./icons/panels-top-left";
 
 const Icons = [
   Activity,
@@ -281,6 +312,37 @@ const Icons = [
   SquareArrowUp,
   SquareArrowUpLeft,
   SquareArrowUpRight,
+  ChartArea,
+  ChartBar,
+  ChartBarDecreasing,
+  ChartBarIncreasing,
+  ChartBarBig,
+  ChartBarStacked,
+  ChartCandlestick,
+  ChartColumn,
+  ChartColumnBig,
+  ChartColumnDecreasing,
+  ChartColumnIncreasing,
+  ChartColumnStacked,
+  ChartGantt,
+  ChartLine,
+  ChartNetwork,
+  ChartNoAxesColumn,
+  ChartNoAxesColumnDecreasing,
+  ChartNoAxesColumnIncreasing,
+  ChartNoAxesCombined,
+  ChartNoAxesGantt,
+  ChartPie,
+  ChartScatter,
+  ChartSpline,
+  Kanban,
+  SquareChartGantt,
+  SquareDashedKanban,
+  SquareKanban,
+  TrendingDown,
+  TrendingUp,
+  FolderKanban,
+  PanelsTopLeft,
 ];
 
 function App() {
