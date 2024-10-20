@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const Airplay: React.FC<IconProps> = ({
+export const IterationCcw: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
@@ -12,9 +12,12 @@ export const Airplay: React.FC<IconProps> = ({
     if (!hovered) return;
 
     baseRef.current?.animate(
-      [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
+      [
+        { opacity: 0, rotate: "360deg" },
+        { opacity: 1, rotate: "0deg" },
+      ],
       {
-        duration: 600,
+        duration: 400,
         iterations: 1,
         fill: "forwards",
         easing: "ease-in-out",
@@ -36,8 +39,8 @@ export const Airplay: React.FC<IconProps> = ({
       ref={baseRef}
       {...props}
     >
-      <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1" />
-      <path d="m12 15 5 6H7Z" />
+      <polyline points="16 14 20 18 16 22" />
+      <path d="M20 10c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8h8" />
     </svg>
   );
 };

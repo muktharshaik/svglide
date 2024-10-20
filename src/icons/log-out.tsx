@@ -2,19 +2,25 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const Airplay: React.FC<IconProps> = ({
+export const LogOut: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
-  const baseRef = useRef<SVGSVGElement>(null);
+  const arrowRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
     if (!hovered) return;
 
-    baseRef.current?.animate(
-      [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
+    arrowRef.current?.animate(
+      [
+        { transform: "translateX(0)" },
+        { transform: "translateX(3px)" },
+        { transform: "translateX(0)" },
+        { transform: "translateX(3px)" },
+        { transform: "translateX(0)" },
+      ],
       {
-        duration: 600,
+        duration: 800,
         iterations: 1,
         fill: "forwards",
         easing: "ease-in-out",
@@ -33,11 +39,13 @@ export const Airplay: React.FC<IconProps> = ({
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      ref={baseRef}
       {...props}
     >
-      <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1" />
-      <path d="m12 15 5 6H7Z" />
+      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+      <g ref={arrowRef}>
+        <polyline points="16 17 21 12 16 7" />
+        <line x1="21" x2="9" y1="12" y2="12" />
+      </g>
     </svg>
   );
 };

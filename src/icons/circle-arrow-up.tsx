@@ -2,19 +2,25 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const Airplay: React.FC<IconProps> = ({
+export const CircleArrowUp: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
-  const baseRef = useRef<SVGSVGElement>(null);
+  const arrowRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
     if (!hovered) return;
 
-    baseRef.current?.animate(
-      [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
+    arrowRef.current?.animate(
+      [
+        { transform: "translateY(0)", rotate: "10deg" },
+        { transform: "translateY(-5px)", rotate: "0" },
+        { transform: "translateY(0)", rotate: "10deg" },
+        { transform: "translateY(-5px)", rotate: "-10deg" },
+        { transform: "translateY(0)", rotate: "0" },
+      ],
       {
-        duration: 600,
+        duration: 800,
         iterations: 1,
         fill: "forwards",
         easing: "ease-in-out",
@@ -33,11 +39,12 @@ export const Airplay: React.FC<IconProps> = ({
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      ref={baseRef}
+      ref={arrowRef}
       {...props}
     >
-      <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1" />
-      <path d="m12 15 5 6H7Z" />
+      <circle cx="12" cy="12" r="10" />
+      <path d="m16 12-4-4-4 4" />
+      <path d="M12 16V8" />
     </svg>
   );
 };
