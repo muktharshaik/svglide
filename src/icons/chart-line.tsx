@@ -2,25 +2,34 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const TrendingUpDown: React.FC<IconProps> = ({
+export const ChartLine: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
-  const baseRef = useRef<SVGSVGElement>(null);
+  const baseRef = useRef<SVGPathElement>(null);
+  const lineRef = useRef<SVGPathElement>(null);
 
   useEffect(() => {
     if (!hovered) return;
 
     baseRef.current?.animate(
-      [
-        { strokeDasharray: "0, 100", rotate: "-10deg" },
-        { strokeDasharray: "100, 0", rotate: "0deg" },
-      ],
+      [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
       {
-        duration: 1000,
+        duration: 600,
         iterations: 1,
         fill: "forwards",
         easing: "ease-in-out",
+      }
+    );
+
+    lineRef.current?.animate(
+      [
+        { transform: "scaleX(1)" },
+        { transform: "scaleX(1.4)" },
+        { transform: "scaleX(1)" },
+      ],
+      {
+        duration: 400,
       }
     );
   }, [hovered]);
@@ -36,13 +45,10 @@ export const TrendingUpDown: React.FC<IconProps> = ({
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      ref={baseRef}
       {...props}
     >
-      <path d="M14.828 14.828 21 21" />
-      <path d="M21 16v5h-5" />
-      <path d="m21 3-9 9-4-4-6 6" />
-      <path d="M21 8V3h-5" />
+      <path d="M3 3v16a2 2 0 0 0 2 2h16" ref={baseRef} />
+      <path d="m19 9-5 5-4-4-3 3" ref={lineRef} />
     </svg>
   );
 };
