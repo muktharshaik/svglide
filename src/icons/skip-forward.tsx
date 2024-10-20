@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const Airplay: React.FC<IconProps> = ({
+export const SkipForward: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
@@ -36,8 +36,8 @@ export const Airplay: React.FC<IconProps> = ({
       ref={baseRef}
       {...props}
     >
-      <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1" />
-      <path d="m12 15 5 6H7Z" />
+      <polygon points="5 4 15 12 5 20 5 4" />
+      <line x1="19" x2="19" y1="5" y2="19" />
     </svg>
   );
 };
