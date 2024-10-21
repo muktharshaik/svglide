@@ -170,6 +170,26 @@ import { TrendingDown } from "./icons/trending-down";
 import { TrendingUp } from "./icons/trending-up";
 import { FolderKanban } from "./icons/folder-kanban";
 import { PanelsTopLeft } from "./icons/panels-top-left";
+import { Bitcoin } from "./icons/bitcoin";
+import { Chrome } from "./icons/chrome";
+import { Codepen } from "./icons/codepen";
+import { Codesandbox } from "./icons/codesandbox";
+import { Dribbble } from "./icons/dribbble";
+import { Facebook } from "./icons/facebook";
+import { Figma } from "./icons/figma";
+import { Framer } from "./icons/framer";
+import { Github } from "./icons/github";
+import { Gitlab } from "./icons/gitlab";
+import { Hexagon } from "./icons/hexagon";
+import { Instagram } from "./icons/instagram";
+import { Linkedin } from "./icons/linkedin";
+import { Pocket } from "./icons/pocket";
+import { Slack } from "./icons/slack";
+import { Target } from "./icons/target";
+import { Trello } from "./icons/trello";
+import { Twitch } from "./icons/twitch";
+import { Twitter } from "./icons/twitter";
+import { Youtube } from "./icons/youtube";
 
 const Icons = [
   Activity,
@@ -343,6 +363,26 @@ const Icons = [
   TrendingUp,
   FolderKanban,
   PanelsTopLeft,
+  Bitcoin,
+  Chrome,
+  Codepen,
+  Codesandbox,
+  Dribbble,
+  Facebook,
+  Figma,
+  Framer,
+  Github,
+  Gitlab,
+  Hexagon,
+  Instagram,
+  Linkedin,
+  Pocket,
+  Slack,
+  Target,
+  Trello,
+  Twitch,
+  Twitter,
+  Youtube,
 ];
 
 function App() {
