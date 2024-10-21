@@ -17,7 +17,7 @@ Here is the list in the format you requested:
 - [ ] Accounts & access
 - [ ] Animals
 - [x] Arrows
-- [ ] Brands
+- [x] Brands
 - [ ] Buildings
 - [x] Charts
 - [ ] Communication
