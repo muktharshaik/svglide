@@ -22,7 +22,6 @@ export const Accesibility: React.FC<IconProps> = ({
       }
     );
 
-    // translate the wheel to the right
     wheelRef.current?.animate(
       [{ transform: "translateX(10px)" }, { transform: "translateX(0px)" }],
       {

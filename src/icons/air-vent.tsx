@@ -22,7 +22,6 @@ export const AirVent: React.FC<IconProps> = ({
       }
     );
 
-    // air vent animation from top to bottom
     airVentRef.current?.animate(
       [
         { transform: "translateY(-10px)", opacity: "0%" },

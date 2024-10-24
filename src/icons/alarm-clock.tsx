@@ -26,7 +26,6 @@ export const AlarmClock: React.FC<IconProps> = ({
       );
     });
 
-    // rotate the clock hand 45 degrees and then back to 0
     clockRef.current?.animate(
       [
         { transform: "rotate(0deg)" },
@@ -41,7 +40,6 @@ export const AlarmClock: React.FC<IconProps> = ({
       }
     );
 
-    // shake top lines
     topLinesRef.current?.animate(
       [
         { transform: "rotate(0deg)" },
