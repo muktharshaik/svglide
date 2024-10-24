@@ -190,6 +190,33 @@ import { Trello } from "./icons/trello";
 import { Twitch } from "./icons/twitch";
 import { Twitter } from "./icons/twitter";
 import { Youtube } from "./icons/youtube";
+import { Baby } from "./icons/baby";
+import { BadgeHelp } from "./icons/badge-help";
+import { BadgeInfo } from "./icons/badge-info";
+import { CircleHelp } from "./icons/circle-help";
+import { Contrast } from "./icons/contrast";
+import { EarOff } from "./icons/ear-off";
+import { Ear } from "./icons/ear";
+import { Eclipse } from "./icons/eclipse";
+import { EyeClosed } from "./icons/eye-closed";
+import { EyeOff } from "./icons/eye-off";
+import { Eye } from "./icons/eye";
+import { Glasses } from "./icons/glasses";
+import { Hand } from "./icons/hand";
+import { Info } from "./icons/info";
+import { LifeBuoy } from "./icons/life-buoy";
+import { MoonStar } from "./icons/moon-star";
+import { Moon } from "./icons/moon";
+import { PersonStanding } from "./icons/person-standing";
+import { ScanEye } from "./icons/scan-eye";
+import { ScanSearch } from "./icons/scan-search";
+import { Speech } from "./icons/speech";
+import { SunDim } from "./icons/sun-dim";
+import { SunMedium } from "./icons/sun-medium";
+import { SunMoon } from "./icons/sun-moon";
+import { Sun } from "./icons/sun";
+import { ZoomIn } from "./icons/zoom-in";
+import { ZoomOut } from "./icons/zoom-out";
 
 const Icons = [
   Activity,
@@ -383,6 +410,33 @@ const Icons = [
   Twitch,
   Twitter,
   Youtube,
+  Baby,
+  BadgeHelp,
+  BadgeInfo,
+  CircleHelp,
+  Contrast,
+  EarOff,
+  Ear,
+  Eclipse,
+  EyeClosed,
+  EyeOff,
+  Eye,
+  Glasses,
+  Hand,
+  Info,
+  LifeBuoy,
+  MoonStar,
+  Moon,
+  PersonStanding,
+  ScanEye,
+  ScanSearch,
+  Speech,
+  SunDim,
+  SunMedium,
+  SunMoon,
+  Sun,
+  ZoomIn,
+  ZoomOut,
 ];
 
 function App() {
