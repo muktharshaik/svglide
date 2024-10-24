@@ -2,12 +2,12 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const AirVent: React.FC<IconProps> = ({
+export const EyeOff: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
-  const baseRef = useRef<SVGPathElement>(null);
-  const airVentRef = useRef<SVGPathElement>(null);
+  const baseRef = useRef<SVGSVGElement>(null);
+  const pathRef = useRef<SVGPathElement>(null);
 
   useEffect(() => {
     if (!hovered) return;
@@ -22,13 +22,10 @@ export const AirVent: React.FC<IconProps> = ({
       }
     );
 
-    airVentRef.current?.animate(
-      [
-        { transform: "translateY(-10px)", opacity: "0%" },
-        { transform: "translateY(0px)", opacity: "100%" },
-      ],
+    pathRef.current?.animate(
+      [{ transform: "rotateY(180deg)" }, { transform: "rotateY(0deg)" }],
       {
-        duration: 400,
+        duration: 600,
         iterations: 1,
         fill: "forwards",
         easing: "ease-in-out",
@@ -47,16 +44,13 @@ export const AirVent: React.FC<IconProps> = ({
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      ref={baseRef}
       {...props}
     >
-      <g ref={baseRef}>
-        <path d="M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-        <path d="M6 8h12" />
-      </g>
-      <g ref={airVentRef}>
-        <path d="M18.3 17.7a2.5 2.5 0 0 1-3.16 3.83 2.53 2.53 0 0 1-1.14-2V12" />
-        <path d="M6.6 15.6A2 2 0 1 0 10 17v-5" />
-      </g>
+      <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" />
+      <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" ref={pathRef} />
+      <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" />
+      <path d="m2 2 20 20" />
     </svg>
   );
 };

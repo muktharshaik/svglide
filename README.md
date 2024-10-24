@@ -13,7 +13,7 @@ Elevate your user interface with SVGlide, a dynamic and animated SVG icon librar
 
 Here is the list in the format you requested:
 
-- [ ] Accessibility
+- [x] Accessibility
 - [ ] Accounts & access
 - [ ] Animals
 - [x] Arrows

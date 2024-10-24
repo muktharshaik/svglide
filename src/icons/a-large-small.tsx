@@ -12,7 +12,6 @@ export const ALargeSmall: React.FC<IconProps> = ({
   useEffect(() => {
     if (!hovered) return;
 
-    // path1 scale 0.5 to 1, path2 scale 1.5 to 1
     path1Ref.current?.animate(
       [{ transform: "scaleY(0.5)" }, { transform: "scaleY(1)" }],
       {
