@@ -18,7 +18,7 @@ Here is the list in the format you requested:
 - [ ] Animals
 - [x] Arrows
 - [x] Brands
-- [ ] Buildings
+- [x] Buildings
 - [x] Charts
 - [ ] Communication
 - [ ] Connectivity
