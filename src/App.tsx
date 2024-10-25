@@ -217,6 +217,29 @@ import { SunMoon } from "./icons/sun-moon";
 import { Sun } from "./icons/sun";
 import { ZoomIn } from "./icons/zoom-in";
 import { ZoomOut } from "./icons/zoom-out";
+import { Anvil } from "./icons/anvil";
+import { BrickWall } from "./icons/brick-wall";
+import { Building } from "./icons/building";
+import { Building2 } from "./icons/building-2";
+import { Castle } from "./icons/castle";
+import { Church } from "./icons/church";
+import { Cuboid } from "./icons/cuboid";
+import { Dam } from "./icons/dam";
+import { Factory } from "./icons/factory";
+import { Fence } from "./icons/fence";
+import { GraduationCap } from "./icons/graduation-cap";
+import { Hospital } from "./icons/hospital";
+import { Hotel } from "./icons/hotel";
+import { Home } from "./icons/house";
+import { HousePlug } from "./icons/house-plug";
+import { HousePlus } from "./icons/house-plus";
+import { Landmark } from "./icons/landmark";
+import { School } from "./icons/school";
+import { Store } from "./icons/store";
+import { Theater } from "./icons/theater";
+import { University } from "./icons/university";
+import { UtilityPole } from "./icons/utility-pole";
+import { Warehouse } from "./icons/warehouse";
 
 const Icons = [
   Activity,
@@ -437,6 +460,29 @@ const Icons = [
   Sun,
   ZoomIn,
   ZoomOut,
+  Anvil,
+  BrickWall,
+  Building,
+  Building2,
+  Castle,
+  Church,
+  Cuboid,
+  Dam,
+  Factory,
+  Fence,
+  GraduationCap,
+  Hospital,
+  Hotel,
+  Home,
+  HousePlug,
+  HousePlus,
+  Landmark,
+  School,
+  Store,
+  Theater,
+  University,
+  UtilityPole,
+  Warehouse,
 ];
 
 function App() {
