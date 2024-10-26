@@ -240,6 +240,32 @@ import { Theater } from "./icons/theater";
 import { University } from "./icons/university";
 import { UtilityPole } from "./icons/utility-pole";
 import { Warehouse } from "./icons/warehouse";
+import { CirclePlus } from "./icons/circle-plus";
+import { Grab } from "./icons/grab";
+import { Lasso } from "./icons/lasso";
+import { LassoSelect } from "./icons/lasso-select";
+import { Loader } from "./icons/loader";
+import { LoaderCircle } from "./icons/loader-circle";
+import { LoaderPinwheel } from "./icons/loader-pinwheel";
+import { MousePointer } from "./icons/mouse-pointer";
+import { MousePointer2 } from "./icons/mouse-pointer-2";
+import { MousePointerBan } from "./icons/mouse-pointer-ban";
+import { MousePointerClick } from "./icons/mouse-pointer-click";
+import { PenTool } from "./icons/pen-tool";
+import { Pencil } from "./icons/pencil";
+import { PencilOff } from "./icons/pencil-off";
+import { Plus } from "./icons/plus";
+import { Pointer } from "./icons/pointer";
+import { PointerOff } from "./icons/pointer-off";
+import { Sparkles } from "./icons/sparkles";
+import { SquareDashedMousePointer } from "./icons/square-dashed-mouse-pointer";
+import { SquareMousePointer } from "./icons/square-mouse-pointer";
+import { Stamp } from "./icons/stamp";
+import { Text } from "./icons/text";
+import { TextCursor } from "./icons/text-cursor";
+import { TextSelect } from "./icons/text-select";
+import { Wand } from "./icons/wand";
+import { WandSparkles } from "./icons/wand-sparkles";
 
 const Icons = [
   Activity,
@@ -483,6 +509,32 @@ const Icons = [
   University,
   UtilityPole,
   Warehouse,
+  CirclePlus,
+  Grab,
+  Lasso,
+  LassoSelect,
+  Loader,
+  LoaderCircle,
+  LoaderPinwheel,
+  MousePointer,
+  MousePointer2,
+  MousePointerBan,
+  MousePointerClick,
+  PenTool,
+  Pencil,
+  PencilOff,
+  Plus,
+  Pointer,
+  PointerOff,
+  Sparkles,
+  SquareDashedMousePointer,
+  SquareMousePointer,
+  Stamp,
+  Text,
+  TextCursor,
+  TextSelect,
+  Wand,
+  WandSparkles,
 ];
 
 function App() {
