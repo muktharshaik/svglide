@@ -23,7 +23,7 @@ Here is the list in the format you requested:
 - [ ] Communication
 - [ ] Connectivity
 - [ ] Currency
-- [ ] Cursors
+- [x] Cursors
 - [ ] Design
 - [ ] Coding & development
 - [ ] Devices
