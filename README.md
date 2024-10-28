@@ -32,7 +32,7 @@ Here is the list in the format you requested:
 - [ ] Food & beverage
 - [ ] Furniture
 - [ ] Gaming
-- [ ] Home
+- [x] Home
 - [ ] Layout
 - [ ] Mail
 - [ ] Maps
