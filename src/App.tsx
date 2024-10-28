@@ -266,6 +266,32 @@ import { TextCursor } from "./icons/text-cursor";
 import { TextSelect } from "./icons/text-select";
 import { Wand } from "./icons/wand";
 import { WandSparkles } from "./icons/wand-sparkles";
+import { AlarmSmoke } from "./icons/alarm-smoke";
+import { BellElectric } from "./icons/bell-electric";
+import { Blinds } from "./icons/blinds";
+import { Bolt } from "./icons/bolt";
+import { CookingPot } from "./icons/cooking-pot";
+import { DoorClosed } from "./icons/door-closed";
+import { DoorOpen } from "./icons/door-open";
+import { Drill } from "./icons/drill";
+import { Fan } from "./icons/fan";
+import { FireExtinguisher } from "./icons/fire-extinguisher";
+import { Hammer } from "./icons/hammer";
+import { Heater } from "./icons/heater";
+import { Microwave } from "./icons/microwave";
+import { PaintRoller } from "./icons/paint-roller";
+import { Paintbrush } from "./icons/paintbrush";
+import { PaintbrushVertical } from "./icons/paintbrush-vertical";
+import { Refrigerator } from "./icons/refrigerator";
+import { Router } from "./icons/router";
+import { Shell } from "./icons/shell";
+import { ShowerHead } from "./icons/shower-head";
+import { SwatchBook } from "./icons/swatch-book";
+import { Usb } from "./icons/usb";
+import { Vault } from "./icons/vault";
+import { Volleyball } from "./icons/volleyball";
+import { WashingMachine } from "./icons/washing-machine";
+import { Wrench } from "./icons/wrench";
 
 const Icons = [
   Activity,
@@ -535,6 +561,32 @@ const Icons = [
   TextSelect,
   Wand,
   WandSparkles,
+  AlarmSmoke,
+  BellElectric,
+  Blinds,
+  Bolt,
+  CookingPot,
+  DoorClosed,
+  DoorOpen,
+  Drill,
+  Fan,
+  FireExtinguisher,
+  Hammer,
+  Heater,
+  Microwave,
+  PaintRoller,
+  Paintbrush,
+  PaintbrushVertical,
+  Refrigerator,
+  Router,
+  Shell,
+  ShowerHead,
+  SwatchBook,
+  Usb,
+  Vault,
+  Volleyball,
+  WashingMachine,
+  Wrench,
 ];
 
 function App() {
