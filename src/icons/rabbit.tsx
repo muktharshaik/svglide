@@ -2,12 +2,11 @@ import { useEffect, useRef } from "react";
 
 import type { IconProps } from "./icon.types";
 
-export const SquareMousePointer: React.FC<IconProps> = ({
+export const Rabbit: React.FC<IconProps> = ({
   "data-hovered": hovered,
   ...props
 }) => {
   const baseRef = useRef<SVGSVGElement>(null);
-  const cursorRef = useRef<SVGPathElement>(null);
 
   useEffect(() => {
     if (!hovered) return;
@@ -16,22 +15,6 @@ export const SquareMousePointer: React.FC<IconProps> = ({
       [{ strokeDasharray: "0, 100" }, { strokeDasharray: "100, 0" }],
       {
         duration: 600,
-        iterations: 1,
-        fill: "forwards",
-        easing: "ease-in-out",
-      }
-    );
-
-    cursorRef.current?.animate(
-      [
-        { transform: "translate(0px, 0px)" },
-        { transform: "translate(2px, 2px)" },
-        { transform: "translate(0px, -2px)" },
-        { transform: "translate(-2px, 0px)" },
-        { transform: "translate(0px, 0px)" },
-      ],
-      {
-        duration: 800,
         iterations: 1,
         fill: "forwards",
         easing: "ease-in-out",
@@ -53,11 +36,11 @@ export const SquareMousePointer: React.FC<IconProps> = ({
       ref={baseRef}
       {...props}
     >
-      <path
-        d="M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z"
-        ref={cursorRef}
-      />
-      <path d="M21 11V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6" />
+      <path d="M13 16a3 3 0 0 1 2.24 5" />
+      <path d="M18 12h.01" />
+      <path d="M18 21h-8a4 4 0 0 1-4-4 7 7 0 0 1 7-7h.2L9.6 6.4a1 1 0 1 1 2.8-2.8L15.8 7h.2c3.3 0 6 2.7 6 6v1a2 2 0 0 1-2 2h-1a3 3 0 0 0-3 3" />
+      <path d="M20 8.54V4a2 2 0 1 0-4 0v3" />
+      <path d="M7.612 12.524a3 3 0 1 0-1.6 4.3" />
     </svg>
   );
 };
