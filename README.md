@@ -15,7 +15,7 @@ Here is the list in the format you requested:
 
 - [x] Accessibility
 - [ ] Accounts & access
-- [ ] Animals
+- [x] Animals
 - [x] Arrows
 - [x] Brands
 - [x] Buildings
