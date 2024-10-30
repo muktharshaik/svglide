@@ -291,6 +291,25 @@ import { Vault } from "./vault";
 import { Volleyball } from "./volleyball";
 import { WashingMachine } from "./washing-machine";
 import { Wrench } from "./wrench";
+import { Bird } from "./bird";
+import { Bone } from "./bone";
+import { Bug } from "./bug";
+import { BugOff } from "./bug-off";
+import { BugPlay } from "./bug-play";
+import { Cat } from "./cat";
+import { Dog } from "./dog";
+import { Egg } from "./egg";
+import { Fish } from "./fish";
+import { FishOff } from "./fish-off";
+import { FishSymbol } from "./fish-symbol";
+import { Origami } from "./origami";
+import { PawPrint } from "./paw-print";
+import { Rabbit } from "./rabbit";
+import { Rat } from "./rat";
+import { Snail } from "./snail";
+import { Squirrel } from "./squirrel";
+import { Turtle } from "./turtle";
+import { Worm } from "./worm";
 
 export const Icons = [
   Activity,
@@ -586,4 +605,23 @@ export const Icons = [
   Volleyball,
   WashingMachine,
   Wrench,
+  Bird,
+  Bone,
+  Bug,
+  BugOff,
+  BugPlay,
+  Cat,
+  Dog,
+  Egg,
+  Fish,
+  FishOff,
+  FishSymbol,
+  Origami,
+  PawPrint,
+  Rabbit,
+  Rat,
+  Snail,
+  Squirrel,
+  Turtle,
+  Worm,
 ];

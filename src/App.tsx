@@ -3,7 +3,7 @@ import { Icons } from "./icons/icons";
 
 function App() {
   return (
-    <main className="w-screen min-h-screen flex items-center justify-center flex-col gap-10">
+    <main className="w-screen min-h-screen flex items-center justify-center flex-col gap-10 py-10">
       <h1 className="font-bold">SVGlide</h1>
       <div>
         <p className="text-center">
