@@ -34,7 +34,7 @@ Here is the list in the format you requested:
 - [ ] Gaming
 - [x] Home
 - [ ] Layout
-- [ ] Mail
+- [x] Mail
 - [ ] Maps
 - [ ] Maths
 - [ ] Medical
