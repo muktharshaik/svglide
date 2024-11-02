@@ -310,6 +310,25 @@ import { Snail } from "./snail";
 import { Squirrel } from "./squirrel";
 import { Turtle } from "./turtle";
 import { Worm } from "./worm";
+import { Archive } from "./archive";
+import { ArchiveRestore } from "./archive-restore";
+import { ArchiveX } from "./archive-x";
+import { Container } from "./container";
+import { Inbox } from "./inbox";
+import { Mail } from "./mail";
+import { MailCheck } from "./mail-check";
+import { MailMinus } from "./mail-minus";
+import { MailOpen } from "./mail-open";
+import { MailPlus } from "./mail-plus";
+import { MailQuestion } from "./mail-question";
+import { MailSearch } from "./mail-search";
+import { MailWarning } from "./mail-warning";
+import { MailX } from "./mail-x";
+import { Mailbox } from "./mailbox";
+import { Mails } from "./mails";
+import { Paperclip } from "./paperclip";
+import { Trash } from "./trash";
+import { Trash2 } from "./trash-2";
 
 export const Icons = [
   Activity,
@@ -624,4 +643,23 @@ export const Icons = [
   Squirrel,
   Turtle,
   Worm,
+  Archive,
+  ArchiveRestore,
+  ArchiveX,
+  Container,
+  Inbox,
+  Mail,
+  MailCheck,
+  MailMinus,
+  MailOpen,
+  MailPlus,
+  MailQuestion,
+  MailSearch,
+  MailWarning,
+  MailX,
+  Mailbox,
+  Mails,
+  Paperclip,
+  Trash,
+  Trash2,
 ];
