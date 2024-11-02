@@ -6,10 +6,7 @@ import {
 } from "./components/ui/tooltip";
 import { Box } from "./components/box/box";
 import { Icons } from "./icons/icons";
-
-const getDisplayName = (name: string) => {
-  return name.replace(/([A-Z])/g, " $1").trim();
-};
+import { IconNames } from "./icons/iconNames";
 
 const App = () => {
   return (
@@ -29,20 +26,25 @@ const App = () => {
       </div>
       <TooltipProvider>
         <div className="gap-2 flex items-center justify-center flex-wrap container p-4">
-          {Icons.map((Icon, index) => (
-            <Tooltip key={index} delayDuration={300}>
-              <TooltipTrigger asChild>
-                <div>
-                  <Box>
-                    <Icon />
-                  </Box>
-                </div>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p className="text-sm">{getDisplayName(Icon.name)}</p>
-              </TooltipContent>
-            </Tooltip>
-          ))}
+          {Icons.map((Icon, index) => {
+            const iconName =
+              IconNames[Icon.name as keyof typeof IconNames] || Icon.name;
+
+            return (
+              <Tooltip key={index} delayDuration={300}>
+                <TooltipTrigger asChild>
+                  <div>
+                    <Box>
+                      <Icon />
+                    </Box>
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="text-sm">{iconName}</p>
+                </TooltipContent>
+              </Tooltip>
+            );
+          })}
         </div>
       </TooltipProvider>
     </main>
