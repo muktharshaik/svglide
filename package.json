@@ -1,40 +1,79 @@
 {
   "name": "svglide",
-  "private": true,
-  "version": "0.0.0",
+  "description": "A collection of animated SVG icons for React and TypeScript",
+  "version": "1.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "prepare": "npm run build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "@radix-ui/react-icons": "^1.3.1",
-    "@radix-ui/react-tooltip": "^1.1.3",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.454.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.5.4",
-    "tailwindcss-animate": "^1.0.7"
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "typescript",
+    "animation",
+    "icon-pack",
+    "ui",
+    "components",
+    "react-components",
+    "svg-icons",
+    "icon-library",
+    "animated-icons",
+    "design-system",
+    "frontend",
+    "web"
+  ],
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.11.1",
     "@types/node": "^22.8.6",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.2",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.11.1",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.12",
-    "globals": "^15.9.0",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^8.7.0",
-    "vite": "^5.4.8"
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^3.0.0",
+    "typescript": "^5.5.3"
+  },
+  "author": {
+    "name": "Burak Sakalli",
+    "url": "https://buraksakalli.com"
+  },
+  "repository": {
+    "url": "https://github.com/buraksakalli/svglide",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/buraksakalli/svglide/issues"
+  },
+  "homepage": "https://github.com/buraksakalli/svglide#readme",
+  "license": "MIT",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/buraksakalli"
   }
 }
