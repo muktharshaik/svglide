@@ -62,7 +62,8 @@ Here is the list in the format you requested:
 
 ## 🔄 Contributing
 
-Contributions are always welcome! Please see our CONTRIBUTING.md for more information on how to get involved.
+Contributions are always welcome! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for more information on how to get involved.
+
 
 ## 📄 License
 
