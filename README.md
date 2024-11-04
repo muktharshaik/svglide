@@ -63,14 +63,20 @@ Here is the list in the format you requested:
 ## 👥 Contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://buraksakalli.com"><img src="https://github.com/buraksakalli.png?s=100" width="100px;" alt="Burak Sakalli"/><br /><sub><b>Burak Sakalli</b></sub></a><br /><a href="https://github.com/buraksakalli/svglide/commits?author=buraksakalli" title="Code">💻</a> <a href="https://github.com/buraksakalli/svglide/commits?author=buraksakalli" title="Documentation">📖</a> <a href="#design-buraksakalli" title="Design">🎨</a> <a href="#maintenance-buraksakalli" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://siberci.com"><img src="https://avatars.githubusercontent.com/u/38915226?v=4?s=100" width="100px;" alt="Ahmet Kaptan"/><br /><sub><b>Ahmet Kaptan</b></sub></a><br /><a href="https://github.com/buraksakalli/svglide/commits?author=codescaptain" title="Documentation">📖</a> <a href="#example-codescaptain" title="Examples">💡</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->

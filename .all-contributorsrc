@@ -21,8 +21,19 @@
         "design",
         "maintenance"
       ]
+    },
+    {
+      "login": "codescaptain",
+      "name": "Ahmet Kaptan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38915226?v=4",
+      "profile": "http://siberci.com",
+      "contributions": [
+        "doc",
+        "example"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }
