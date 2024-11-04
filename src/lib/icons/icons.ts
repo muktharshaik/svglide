@@ -329,6 +329,8 @@ import { Mails } from "./mails";
 import { Paperclip } from "./paperclip";
 import { Trash } from "./trash";
 import { Trash2 } from "./trash-2";
+import { Copy } from "./copy";
+import { Check } from "./check";
 
 export {
   Activity,
@@ -662,6 +664,8 @@ export {
   Paperclip,
   Trash,
   Trash2,
+  Copy,
+  Check,
 };
 
 export const Icons = [
@@ -996,6 +1000,8 @@ export const Icons = [
   [Paperclip, "Paperclip"],
   [Trash, "Trash"],
   [Trash2, "Trash 2"],
+  [Copy, "Copy"],
+  [Check, "Check"],
 ] as const;
 
 export type IconTuple = (typeof Icons)[number];

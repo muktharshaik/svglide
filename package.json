@@ -1,7 +1,7 @@
 {
   "name": "svglide",
   "description": "A collection of animated SVG icons for React and TypeScript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "files": [
     "dist"
