@@ -1,0 +1,39 @@
+{
+  "projectName": "svglide",
+  "projectOwner": "buraksakalli",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "buraksakalli",
+      "name": "Burak Sakalli",
+      "avatar_url": "https://github.com/buraksakalli.png",
+      "profile": "https://buraksakalli.com",
+      "contributions": [
+        "code",
+        "doc",
+        "design",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "codescaptain",
+      "name": "Ahmet Kaptan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38915226?v=4",
+      "profile": "http://siberci.com",
+      "contributions": [
+        "doc",
+        "example"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "commitType": "docs"
+}
