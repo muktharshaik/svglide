@@ -330,4 +330,6 @@ export const IconNames = {
   Paperclip: "Paperclip",
   Trash: "Trash",
   Trash2: "Trash 2",
+  Copy: "Copy",
+  Check: "Check",
 };
