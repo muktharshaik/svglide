@@ -331,6 +331,7 @@ import { Trash } from "./trash";
 import { Trash2 } from "./trash-2";
 import { Copy } from "./copy";
 import { Check } from "./check";
+import { Antenna } from "./antenna";
 
 export {
   Activity,
@@ -666,6 +667,7 @@ export {
   Trash2,
   Copy,
   Check,
+  Antenna,
 };
 
 export const Icons = [
@@ -1002,6 +1004,7 @@ export const Icons = [
   [Trash2, "Trash 2"],
   [Copy, "Copy"],
   [Check, "Check"],
+  [Antenna, "Antenna"]
 ] as const;
 
 export type IconTuple = (typeof Icons)[number];
